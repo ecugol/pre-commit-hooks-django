@@ -1,0 +1,6 @@
+-   id: check-untracked-migrations
+    name: Untracked Django migrations checker
+    description: "Forbid untracked Django migrations"
+    entry: check-untracked-migrations
+    language: python
+    type: [python]
