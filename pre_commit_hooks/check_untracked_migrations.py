@@ -15,7 +15,7 @@ def _get_untracked_files() -> List:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("filenames", nargs="*", help="models.py files to check")
+    parser.add_argument("filenames", nargs="*", help="Files to check")
     found = False
     for filename in _get_untracked_files():
         if re.match(r".*/migrations/.*\.py", filename):
