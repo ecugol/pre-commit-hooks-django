@@ -1,13 +1,14 @@
 import argparse
 import re
 import subprocess
+from typing import List
 from typing import Optional
 from typing import Sequence
 
 CMD = ["git", "ls-files", "--others", "--exclude-standard"]
 
 
-def _get_untracked_files():
+def _get_untracked_files() -> List:
     output = subprocess.check_output(CMD)
     return output.decode().split("\n")
 
