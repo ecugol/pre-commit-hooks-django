@@ -8,7 +8,7 @@ from typing import Sequence
 CMD = ["git", "ls-files", "--others", "--exclude-standard"]
 
 
-def _get_untracked_files() -> List:
+def _get_untracked_files() -> List[str]:
     output = subprocess.check_output(CMD)
     return output.decode().split("\n")
 
