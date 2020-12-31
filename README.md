@@ -11,7 +11,7 @@ Add this to your `.pre-commit-config.yaml`
 
 ```yaml
 -   repo: https://github.com/ecugol/pre-commit-hooks
-    rev: 0.0.1  # Use the ref you want to point at
+    rev: 0.1.0  # Use the ref you want to point at
     hooks:
     -   id: check-untracked-migrations
 ```
