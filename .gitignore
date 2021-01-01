@@ -8,3 +8,4 @@
 /venv*
 .vscode/
 .idea/
+/build
