@@ -9,7 +9,9 @@ from .utils import get_untracked_files
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--branches", nargs="*", help="Choose which branches to work on")
+    parser.add_argument(
+        "--branches", nargs="*", help="Choose which branches to work on"
+    )
     args = parser.parse_args(argv)
     current_branch = get_current_branch()
     if args.branches and current_branch not in args.branches:
