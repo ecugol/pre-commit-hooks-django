@@ -5,7 +5,7 @@ Some useful hooks for Django development
 
 See also: https://github.com/pre-commit/pre-commit
 
-### Using pre-commit-hooks with pre-commit
+### Using pre-commit-hooks-django with pre-commit
 
 Add this to your `.pre-commit-config.yaml`
 
