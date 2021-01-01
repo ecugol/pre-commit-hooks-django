@@ -3,4 +3,5 @@
     description: "Forbid untracked Django migrations"
     entry: check-untracked-migrations
     language: python
-    type: [python]
+    always_run: true
+    pass_filenames: false
