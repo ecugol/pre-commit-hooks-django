@@ -1,4 +1,4 @@
-pre-commit-hooks
+pre-commit-hooks-django
 ================
 
 Some useful hooks for Django development
