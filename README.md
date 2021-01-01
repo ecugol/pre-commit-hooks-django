@@ -16,7 +16,7 @@ Add this to your `.pre-commit-config.yaml`
     -   id: check-untracked-migrations
         # Optional, if specified, hook will work only on these branchesm
         # otherwise it will work on all branches
-        args: ["--branches", "master", "other_branch"]
+        args: ["--branches", "main", "other_branch"]
 ```
 
 ### Hooks available
