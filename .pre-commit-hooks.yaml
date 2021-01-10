@@ -5,3 +5,15 @@
     language: python
     always_run: true
     pass_filenames: false
+-   id: check-unapplied-migrations
+    name: Check unapplied migrations with manage.py migrate --check
+    entry: sh -c 'python `find . -name "manage.py"` migrate --check'
+    pass_filenames: false
+    language: system
+    always_run: true
+-   id: po-location-format
+    name: Changes location format for .po files
+    entry: po-location-format
+    language: python
+    files: \.po$
+    args: ["--add-location", "never"]
