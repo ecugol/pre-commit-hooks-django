@@ -24,3 +24,20 @@ Add this to your `.pre-commit-config.yaml`
 #### `check-untracked-migrations`
 
 Forbids commit if untracked migrations files are found (e.g. `*/migrations/0001_initial.py`)
+
+#### `check-unapplied-migrations`
+
+*WARNING: USE ONLY WITH DJANGO > v3.1*
+
+Check for unapplied migrations with manage.py migrate --check
+
+#### `po-location-format`
+
+Changes location format for .po files
+
+##### Options:
+
+    --add-location [file, never]
+
+    file: show only the file path as location
+    never: remove all locations
