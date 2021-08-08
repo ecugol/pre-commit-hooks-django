@@ -18,6 +18,7 @@ Add this to your `.pre-commit-config.yaml`
         # otherwise it will work on all branches
         args: ["--branches", "main", "other_branch"]
     -   id: check-unapplied-migrations
+    -   id: check-unapplied-migrations-old
     -   id: po-location-format
         # Mandatory, select one of the following options:
         # file: show only the file path as location
@@ -42,6 +43,12 @@ Forbids commit if untracked migrations files are found (e.g. `*/migrations/0001_
 *WARNING: USE ONLY WITH DJANGO > v3.1*
 
 Check for unapplied migrations with manage.py migrate --check
+
+#### `check-unapplied-migrations-old`
+
+*WARNING: USE ONLY WITH DJANGO < v3.1*
+
+Check for unapplied migrations with manage.py makemigrations --check
 
 #### `po-location-format`
 
