@@ -46,7 +46,7 @@ Check for unapplied migrations with manage.py migrate --check
 
 #### `check-absent-migrations-old`
 
-Check for unapplied migrations with manage.py makemigrations --check
+Check for absent migrations with manage.py makemigrations --check
 
 #### `po-location-format`
 
