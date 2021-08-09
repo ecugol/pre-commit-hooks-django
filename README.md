@@ -44,9 +44,7 @@ Forbids commit if untracked migrations files are found (e.g. `*/migrations/0001_
 
 Check for unapplied migrations with manage.py migrate --check
 
-#### `check-unapplied-migrations-old`
-
-*WARNING: USE ONLY WITH DJANGO < v3.1*
+#### `check-absent-migrations-old`
 
 Check for unapplied migrations with manage.py makemigrations --check
 

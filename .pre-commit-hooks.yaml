@@ -11,7 +11,7 @@
     pass_filenames: false
     language: system
     always_run: true
--   id: check-unapplied-migrations-old
+-   id: check-absent-migrations
     name: Check unapplied migrations with manage.py makemigrations --check
     entry: sh -c 'python `find . -name "manage.py"` makemigrations --check'
     pass_filenames: false
