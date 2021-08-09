@@ -18,7 +18,7 @@ Add this to your `.pre-commit-config.yaml`
         # otherwise it will work on all branches
         args: ["--branches", "main", "other_branch"]
     -   id: check-unapplied-migrations
-    -   id: check-unapplied-migrations-old
+    -   id: check-absent-migrations
     -   id: po-location-format
         # Mandatory, select one of the following options:
         # file: show only the file path as location
