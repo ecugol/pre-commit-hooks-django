@@ -44,9 +44,9 @@ Forbids commit if untracked migrations files are found (e.g. `*/migrations/0001_
 
 Check for unapplied migrations with manage.py migrate --check
 
-#### `check-absent-migrations-old`
+#### `check-absent-migrations`
 
-Check for absent migrations with manage.py makemigrations --check
+Check for absent migrations with manage.py makemigrations --check --dry-run
 
 #### `po-location-format`
 
