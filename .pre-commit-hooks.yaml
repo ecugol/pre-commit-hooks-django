@@ -12,7 +12,7 @@
     language: system
     always_run: true
 -   id: check-absent-migrations
-    name: Check unapplied migrations with manage.py makemigrations --check --dry-run
+    name: Check absent migrations with manage.py makemigrations --check --dry-run
     entry: sh -c 'python `find . -name "manage.py"` makemigrations --check --dry-run'
     pass_filenames: false
     language: system
