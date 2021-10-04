@@ -11,7 +11,7 @@ Add this to your `.pre-commit-config.yaml`
 
 ```yaml
 -   repo: https://github.com/ecugol/pre-commit-hooks-django
-    rev: v0.3.0  # Use the ref you want to point at
+    rev: v0.4.0  # Use the ref you want to point at
     hooks:
     -   id: check-untracked-migrations
         # Optional, if specified, hook will work only on these branches
