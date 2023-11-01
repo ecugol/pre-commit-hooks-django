@@ -16,7 +16,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     current_branch = get_current_branch()
     if args.branches and current_branch not in args.branches:
         print(f"{current_branch} is not present in --branches arg")
-        return 1
+        return 0
     found = False
     for filename in get_untracked_files():
         if re.match(r".*/migrations/.*\.py", filename):
