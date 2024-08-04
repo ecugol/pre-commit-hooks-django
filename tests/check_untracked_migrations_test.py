@@ -1,4 +1,3 @@
-import subprocess
 from hooks.check_untracked_migrations import main
 from hooks.utils import get_current_branch
 
