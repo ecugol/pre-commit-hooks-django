@@ -25,3 +25,13 @@ def test_running_on_correct_branch(temp_git_dir):
 def test_running_on_incorrect_branch(temp_git_dir):
     with temp_git_dir.as_cwd():
         assert main(["--branches", "branch_one", "branch_two"]) == 1
+
+
+def test_running_on_detached_head_no_filter(temp_git_detached_dir):
+    with temp_git_detached_dir.as_cwd():
+        assert main() == 0
+
+
+def test_running_on_detached_head_with_filter(temp_git_detached_dir):
+    with temp_git_detached_dir.as_cwd():
+        assert main(["--branches", "branch_one", "branch_two"]) == 1
